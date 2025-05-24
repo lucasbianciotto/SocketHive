@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.socket:socket.io-client:2.0.0'  // ou version compatible
+    implementation 'org.json:json:20240303'           // pour JSON
+}
+
+application {
+    mainClassName = 'com.sockethive.ClientApp'
+}
